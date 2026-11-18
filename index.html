@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071812">
+<title>Jainam Kanzariya | Portfolio</title>
+
+<style>
+:root{
+ --bg:#071812;
+ --card:#102c20;
+ --gold:#d9b66d;
+ --white:#f4f0e6;
+ --muted:#b8c7bb;
+ --line:rgba(217,182,109,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+ font-family:Arial, sans-serif;
+ background:radial-gradient(circle at top right,#173b29,transparent 35%),var(--bg);
+ color:var(--white);line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:92%;max-width:1100px;margin:auto}
+header{
+ position:sticky;top:0;z-index:10;
+ background:rgba(7,24,18,.95);
+ border-bottom:1px solid var(--line);
+}
+.nav{
+ min-height:70px;display:flex;justify-content:space-between;
+ align-items:center;gap:15px;
+}
+.brand{color:var(--gold);font-size:20px;font-weight:bold}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--muted);font-size:14px}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;color:white;border:1px solid var(--gold);padding:8px}
+.hero{
+ min-height:85vh;display:grid;grid-template-columns:1.3fr .7fr;
+ align-items:center;gap:35px;padding:70px 0;
+}
+.eyebrow,.kicker{color:var(--gold);letter-spacing:2px;font-size:13px;font-weight:bold}
+h1{font-size:clamp(45px,7vw,85px);line-height:1.1;margin:18px 0}
+h1 span{color:var(--gold)}
+p{color:var(--muted)}
+.hero p{font-size:18px;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{
+ display:inline-block;padding:12px 20px;border-radius:7px;
+ background:var(--gold);color:#152116;font-weight:bold;
+}
+.btn.outline{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.profile{
+ width:290px;height:290px;max-width:75vw;max-height:75vw;
+ border:2px solid var(--gold);border-radius:50%;
+ display:grid;place-items:center;margin:auto;
+ background:linear-gradient(145deg,#254b34,#0b1b13);
+ box-shadow:0 15px 60px #0008;
+}
+.profile span{font-size:38px;color:var(--gold);font-weight:bold}
+section{padding:75px 0}
+.section-head{margin-bottom:28px}
+h2{font-size:38px;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{
+ background:var(--card);border:1px solid var(--line);
+ border-radius:14px;padding:23px;
+}
+.card h3{color:var(--gold);margin-bottom:10px}
+.card li{color:var(--muted);margin-left:20px}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}
+.tag{
+ border:1px solid var(--line);padding:7px 12px;
+ border-radius:25px;color:var(--muted);font-size:14px;
+}
+.full{grid-column:1/-1}
+.meta{color:#8eb89a;font-weight:bold;margin-bottom:8px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.contact-item{background:var(--card);border:1px solid var(--line);padding:18px;border-radius:10px}
+.contact-item small{display:block;color:var(--gold)}
+footer{text-align:center;padding:25px;border-top:1px solid var(--line);color:var(--muted)}
+@media(max-width:760px){
+ .nav{min-height:65px}
+ .menu{display:block}
+ nav{display:none;position:absolute;top:65px;left:0;width:100%;padding:20px;background:#091b13;flex-direction:column}
+ nav.open{display:flex}
+ .hero{grid-template-columns:1fr;text-align:center}
+ .profile{grid-row:1}
+ .hero p{margin:auto}
+ .actions{justify-content:center}
+ .grid,.contact-grid{grid-template-columns:1fr}
+ .full{grid-column:auto}
+ h2{font-size:30px}
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="container nav">
+ <a class="brand" href="#home">JAINAM KANZARIYA</a>
+ <button class="menu" id="menuBtn">☰</button>
+ <nav id="navLinks">
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#practical">Practical</a>
+  <a href="#internship">Internship</a>
+  <a href="#workshop">Workshop</a>
+  <a href="#contact">Contact</a>
+ </nav>
+</div>
+</header>
+
+<main>
+<section class="container hero" id="home">
+ <div>
+  <div class="eyebrow">HORTICULTURE STUDENT</div>
+  <h1>Jainam<br><span>Kanzariya</span></h1>
+  <p>Growing with knowledge, moving towards success. I am a B.R.S. Horticulture student passionate about plants, sustainable agriculture and modern farming practices.</p>
+  <div class="actions">
+   <a class="btn" href="#about">Explore Portfolio</a>
+   <a class="btn outline" href="mailto:jainamkanzariya750@gmail.com">Contact Me</a>
+  </div>
+ </div>
+ <div class="profile"><span>JAINAM</span></div>
+</section>
+
+<section id="about">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">01 · INTRODUCTION</div>
+  <h2>About Me</h2>
+  <p>I am an enthusiastic and hardworking horticulture student interested in plants, fruits, vegetables, flowers and modern agricultural technologies. I enjoy learning through practical activities, field experiences and teamwork.</p>
+ </div>
+ <div class="grid">
+  <div class="card">
+   <h3>My Vision</h3>
+   <p>To become a skilled Agriculture Consultant and contribute to modern, productive and sustainable agriculture.</p>
+  </div>
+  <div class="card">
+   <h3>My Motto</h3>
+   <p>Empowering Farmers, Improving Agriculture, Growing a Greener Future.</p>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">02 · ACADEMIC BACKGROUND</div>
+  <h2>Education</h2>
+ </div>
+ <div class="card">
+  <div class="meta">Current Programme</div>
+  <h3>B.R.S. Horticulture</h3>
+  <p><b>University:</b> Lokbharati University for Rural Innovation</p>
+  <p><b>Department:</b> Agriculture & Horticulture</p>
+  <p><b>Location:</b> Sanosra, Gujarat, India</p>
+ </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">03 · WHAT I CAN DO</div>
+  <h2>Skills & Strengths</h2>
+ </div>
+ <div class="grid">
+  <div class="card">
+   <h3>Technical Skills</h3>
+   <div class="tags">
+    <span class="tag">Plant Propagation</span>
+    <span class="tag">Nursery Management</span>
+    <span class="tag">Fruit Crop Management</span>
+    <span class="tag">Vegetable Cultivation</span>
+    <span class="tag">Soil Testing Knowledge</span>
+    <span class="tag">Organic Farming</span>
+    <span class="tag">Fertilizer Management</span>
+    <span class="tag">Basic Plant Protection</span>
+   </div>
+  </div>
+  <div class="card">
+   <h3>Personal Skills</h3>
+   <div class="tags">
+    <span class="tag">Communication</span>
+    <span class="tag">Teamwork</span>
+    <span class="tag">Leadership</span>
+    <span class="tag">Time Management</span>
+    <span class="tag">Problem Solving</span>
+    <span class="tag">Quick Learning</span>
+    <span class="tag">Creativity</span>
+    <span class="tag">Adaptability</span>
+   </div>
+  </div>
+  <div class="card">
+   <h3>Digital Skills</h3>
+   <div class="tags">
+    <span class="tag">MS Office</span>
+    <span class="tag">Google Workspace</span>
+    <span class="tag">PowerPoint</span>
+    <span class="tag">Basic Computer Knowledge</span>
+    <span class="tag">Internet Research</span>
+   </div>
+  </div>
+  <div class="card">
+   <h3>Academic Interests</h3>
+   <div class="tags">
+    <span class="tag">Fruit Science</span>
+    <span class="tag">Vegetable Science</span>
+    <span class="tag">Floriculture</span>
+    <span class="tag">Plant Physiology</span>
+    <span class="tag">Soil Science</span>
+    <span class="tag">Organic Farming</span>
+    <span class="tag">Agricultural Technology</span>
+   </div>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="practical">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">04 · LEARNING BY DOING</div>
+  <h2>Practical Learning</h2>
+  <p>Practical activities that help connect classroom knowledge with real agricultural work.</p>
+ </div>
+ <div class="grid">
+  <div class="card"><h3>Nursery & Seedling Preparation</h3><p>Learning seedling preparation using growing media such as cocopeat, vermiculite and perlite.</p></div>
+  <div class="card"><h3>Plant Propagation</h3><p>Understanding plant propagation and basic cutting techniques.</p></div>
+  <div class="card"><h3>Fruit & Vegetable Crops</h3><p>Learning crop management and cultivation practices for horticultural crops.</p></div>
+  <div class="card"><h3>Soil & Sustainable Farming</h3><p>Exploring soil testing, soil fertility, organic manures and sustainable farming practices.</p></div>
+ </div>
+</div>
+</section>
+
+<section id="internship">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">05 · FIELD EXPERIENCE</div>
+  <h2>Internship Experience</h2>
+ </div>
+ <div class="card">
+  <div class="meta">Center of Excellence for Vegetables · Vadrad</div>
+  <h3>Horticulture Internship</h3>
+  <p>During this internship, I learned about modern vegetable cultivation, nursery management, improved farming techniques and practical agricultural practices.</p>
+  <p style="margin-top:12px">Internship photos and certificate can be added here later.</p>
+ </div>
+</div>
+</section>
+
+<section id="workshop">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">06 · INNOVATION & TEAMWORK</div>
+  <h2>Rural Innovation Workshop</h2>
+  <p>A group project focused on a simple, manually operated lemon size grading model.</p>
+ </div>
+ <div class="grid">
+  <div class="card full">
+   <div class="meta">12–17 October 2026 · Group No. 4</div>
+   <h3>Project: Lemon Size Grader</h3>
+   <p>The project addresses the difficulty farmers can face when manually sorting lemons by size. The proposed wooden model uses a sloping surface and different-sized openings to separate lemons into large, medium and small categories, helping make sorting and packing easier.</p>
+   <p style="margin-top:12px"><b>Survey location:</b> Sarvedi Village, Bhavnagar District, Gujarat</p>
+   <p><b>Guide / Mentor:</b> Rajvee Ben Kalariya</p>
+   <p><b>My Role:</b> Model Design</p>
+   <p><b>Estimated cost in proposal:</b> ₹2,000 for one model; ₹20,000 for ten models.</p>
+  </div>
+  <div class="card">
+   <h3>Team Members & Roles</h3>
+   <ul>
+    <li>Rajveer Mobh — Model Making</li>
+    <li>Sahil Badi — Model Making</li>
+    <li>Arpit Makvana — Presentation & Video Editing</li>
+    <li>Jainam Kanzariya — Model Design</li>
+    <li>Mayank Prajapati — Video Shooting</li>
+   </ul>
+  </div>
+  <div class="card">
+   <h3>Project Learning</h3>
+   <p>Model planning, design thinking, teamwork, problem identification, presentation and exploring a practical solution for post-harvest sorting.</p>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="achievements">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">07 · PROGRESS</div>
+  <h2>Achievements & Highlights</h2>
+ </div>
+ <div class="card">
+  <ul>
+   <li>Completed horticulture practical activities.</li>
+   <li>Participated in agricultural field training.</li>
+   <li>Developed knowledge of nursery management.</li>
+   <li>Explored modern agricultural techniques.</li>
+   <li>Improved presentation and communication skills.</li>
+   <li>Participated in academic activities and college events.</li>
+  </ul>
+ </div>
+</div>
+</section>
+
+<section id="goals">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">08 · THE ROAD AHEAD</div>
+  <h2>Career Goals</h2>
+ </div>
+ <div class="card">
+  <p>My goal is to become a professional Agriculture Consultant and help farmers improve crop production through scientific farming methods, modern technology and sustainable agricultural practices. I aim to keep learning and contribute to a greener future.</p>
+ </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+ <div class="section-head">
+  <div class="kicker">09 · GET IN TOUCH</div>
+  <h2>Contact</h2>
+  <p>Feel free to connect with me for academic, horticulture and collaboration opportunities.</p>
+ </div>
+ <div class="contact-grid">
+  <div class="contact-item"><small>Email</small><strong><a href="mailto:jainamkanzariya750@gmail.com">jainamkanzariya750@gmail.com</a></strong></div>
+  <div class="contact-item"><small>Location</small><strong>Sanosra, Gujarat, India</strong></div>
+  <div class="contact-item"><small>Course</small><strong>B.R.S. Horticulture</strong></div>
+  <div class="contact-item"><small>Department</small><strong>Agriculture & Horticulture</strong></div>
+ </div>
+</div>
+</section>
+</main>
+
+<footer>
+ © <span id="year"></span> Jainam Kanzariya · Personal Portfolio<br>
+ Growing with knowledge, moving towards success.
+</footer>
+
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
